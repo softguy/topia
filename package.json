@@ -1,0 +1,15 @@
+{
+  "name": "topia",
+  "description": "topia's port to node",
+  "version": "0.1.0",
+  "homepage": "http://www.transppt.com",
+  "author": {
+    "name": "softguy",
+    "email": "softguyus@yahoo.com"
+  },
+  "dependencies": {
+    "backbone": "1.x"
+  },
+  "main": "./index.js",  
+  "readmeFilename": "README.md"
+}
