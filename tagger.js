@@ -1,6 +1,10 @@
 "use strict";
+var Backbone=require('backbone');
 
-window.anod.Topia.Tagger = Backbone.Model.extend({
+var //window.anod.Topia.
+Tagger = Backbone.Model.extend({
+
+
 	TERM_SPEC: /([^a-zA-Z]*)([a-zA-Z-\.]*[a-zA-Z])([^a-zA-Z]*[a-zA-Z]*)/g,
 	
 	tags_by_term: {},
@@ -174,4 +178,14 @@ window.anod.Topia.Tagger = Backbone.Model.extend({
 		}
 		return null;
 	}
+
+
+
 });
+
+
+	if (typeof module !== 'undefined' && typeof module.exports !== 'undefined')
+    module.exports = Tagger;
+  else
+    window.Tagger = Tagger;
+		

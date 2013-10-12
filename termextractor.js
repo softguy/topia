@@ -1,6 +1,9 @@
 "use strict";
+var Backbone=require('backbone');
 
-window.anod.Topia.TermExtraction = Backbone.Model.extend({
+//window.anod.Topia.TermExtraction
+module.exports
+ = Backbone.Model.extend({
 	SEARCH: 0,
 	NOUN: 1,
 	

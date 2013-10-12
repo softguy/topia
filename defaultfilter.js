@@ -1,8 +1,8 @@
 "use strict";
+var Backbone=require('backbone');
 
-//window.anod.Topia.DefaultFilter = Backbone.Model.extend({
-(function(){
-
+//window.anod.Topia.
+module.exports = Backbone.Model.extend({
 
 	defaults: {
 		singleStrengthMinOccur: 3,
@@ -13,11 +13,4 @@
 			return ((strength == 1 && occur >= this.get('singleStrengthMinOccur')) ||
 							(strength >= this.get('noLimitStrength')));
 	}
-//});
-
-
-if (typeof module !== 'undefined' && typeof module.exports !== 'undefined')
-    module.exports = DefaultFilter;
-  else
-    window.DefaultFilter = DefaultFilter;		
-})();
+});
